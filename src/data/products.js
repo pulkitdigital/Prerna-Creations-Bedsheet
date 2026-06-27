@@ -1,0 +1,68 @@
+export const categories = ['All', 'Fitted', 'Printed', 'Plain', 'King Size', 'Queen Size']
+
+export const products = [
+  {
+    id: 1,
+    name: 'Lavender Harmony Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'Double Bed',
+    image: '/src/assets/products/1.jpg',
+    tag: 'Bestseller',
+  },
+  {
+    id: 2,
+    name: 'Golden Mosaic Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'Double Bed',
+    image: '/src/assets/products/2.jpg',
+    tag: 'New',
+  },
+  {
+    id: 3,
+    name: 'Silver Blossom Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'Double Bed',
+    image: '/src/assets/products/3.jpg',
+    tag: 'Popular',
+  },
+  {
+    id: 4,
+    name: 'Ruby Checkmate Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'Double Bed',
+    image: '/src/assets/products/4.jpg',
+    tag: '',
+  },
+  {
+    id: 5,
+    name: 'Pink Royale Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'King Size',
+    image: '/src/assets/products/5.jpg',
+    tag: 'Premium',
+  },
+  {
+    id: 6,
+    name: 'Crimson Horizon Fitted Bedsheet',
+    category: 'Printed',
+    size: 'Double Bed',
+    image: '/src/assets/products/6.jpg',
+    tag: '',
+  },
+  {
+    id: 7,
+    name: 'Azure Bloom Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'King Size',
+    image: '/src/assets/products/7.jpg',
+    tag: 'New',
+  },
+  {
+    id: 8,
+    name: 'Emerald Forest Fitted Bedsheet',
+    category: 'Fitted',
+    size: 'Queen Size',
+    image: '/src/assets/products/8.jpg',
+    tag: '',
+  },
+]
