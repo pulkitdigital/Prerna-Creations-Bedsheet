@@ -6,7 +6,7 @@ export const products = [
     name: 'Lavender Harmony Fitted Bedsheet',
     category: 'Fitted',
     size: 'Double Bed',
-    image: '/src/assets/products/1.jpg',
+    image: '/products/1.jpg',
     tag: 'Bestseller',
   },
   {
@@ -14,7 +14,7 @@ export const products = [
     name: 'Golden Mosaic Fitted Bedsheet',
     category: 'Fitted',
     size: 'Double Bed',
-    image: '/src/assets/products/2.jpg',
+    image: '/products/2.jpg',
     tag: 'New',
   },
   {
@@ -22,7 +22,7 @@ export const products = [
     name: 'Silver Blossom Fitted Bedsheet',
     category: 'Fitted',
     size: 'Double Bed',
-    image: '/src/assets/products/3.jpg',
+    image: '/products/3.jpg',
     tag: 'Popular',
   },
   {
@@ -30,7 +30,7 @@ export const products = [
     name: 'Ruby Checkmate Fitted Bedsheet',
     category: 'Fitted',
     size: 'Double Bed',
-    image: '/src/assets/products/4.jpg',
+    image: '/products/4.jpg',
     tag: '',
   },
   {
@@ -38,7 +38,7 @@ export const products = [
     name: 'Pink Royale Fitted Bedsheet',
     category: 'Fitted',
     size: 'King Size',
-    image: '/src/assets/products/5.jpg',
+    image: '/products/5.jpg',
     tag: 'Premium',
   },
   {
@@ -46,7 +46,7 @@ export const products = [
     name: 'Crimson Horizon Fitted Bedsheet',
     category: 'Printed',
     size: 'Double Bed',
-    image: '/src/assets/products/6.jpg',
+    image: '/products/6.jpg',
     tag: '',
   },
   {
@@ -54,7 +54,7 @@ export const products = [
     name: 'Azure Bloom Fitted Bedsheet',
     category: 'Fitted',
     size: 'King Size',
-    image: '/src/assets/products/7.jpg',
+    image: '/products/7.jpg',
     tag: 'New',
   },
   {
@@ -62,7 +62,7 @@ export const products = [
     name: 'Emerald Forest Fitted Bedsheet',
     category: 'Fitted',
     size: 'Queen Size',
-    image: '/src/assets/products/8.jpg',
+    image: '/products/8.jpg',
     tag: '',
   },
 ]
