@@ -6,9 +6,9 @@ export function getWhatsAppLink(message = '') {
 }
 
 export function orderLink(productName) {
-  return getWhatsAppLink(`Hi, I want to order: ${productName}. Please share details and availability.`)
+  return getWhatsAppLink(`Hi Prerna Creations! I want to place a bulk order for: ${productName}. Please share wholesale price and minimum order quantity.`)
 }
 
 export function generalLink() {
-  return getWhatsAppLink(`Hi Prerna Creations! I'd like to know more about your bedsheets.`)
+  return getWhatsAppLink(`Hi Prerna Creations! I am interested in bulk/wholesale bedsheet orders. Please share your catalog and pricing.`)
 }

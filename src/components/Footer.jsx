@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom'
-import { FiPhone, FiMapPin, FiInstagram } from 'react-icons/fi'
-import { generalLink } from '../utils/whatsapp'
+import { Link } from "react-router-dom";
+import { FiPhone, FiMapPin, FiInstagram } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import { generalLink } from "../utils/whatsapp";
 
 export default function Footer() {
   return (
     <footer className="bg-brand-red text-white mt-16">
-      <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
-
+      <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand */}
-        <div>
+        <div className="md:col-span-2">
           <div className="flex items-center gap-2 mb-3">
             <img
               src="/logo.webp"
@@ -17,9 +17,23 @@ export default function Footer() {
             />
             <p className="font-display text-xl font-bold">Prerna Creations</p>
           </div>
-          <p className="text-sm text-red-100 leading-relaxed">
-            Premium quality bedsheets in Allahabad. Fitted, printed & plain — for every home.
+          <p className="text-sm text-red-100 leading-relaxed mb-4 max-w-sm">
+            Wholesale & bulk supplier of premium fitted, printed and plain
+            bedsheets. Serving resellers and businesses across India with
+            consistent quality and competitive pricing.
           </p>
+          <div className="flex flex-wrap gap-2">
+            {["Pan India Shipping", "Wholesale Welcome", "Bulk Orders"].map(
+              (badge) => (
+                <span
+                  key={badge}
+                  className="text-xs bg-white/20 text-white px-3 py-1 rounded-full"
+                >
+                  {badge}
+                </span>
+              ),
+            )}
+          </div>
         </div>
 
         {/* Quick Links */}
@@ -29,10 +43,10 @@ export default function Footer() {
           </p>
           <ul className="flex flex-col gap-2">
             {[
-              { to: '/', label: 'Home' },
-              { to: '/catalog', label: 'Catalog' },
-              { to: '/about', label: 'About Us' },
-              { to: '/contact', label: 'Contact' },
+              { to: "/", label: "Home" },
+              { to: "/catalog", label: "Catalog" },
+              { to: "/about", label: "About Us" },
+              { to: "/contact", label: "Contact" },
             ].map(({ to, label }) => (
               <li key={to}>
                 <Link
@@ -57,15 +71,16 @@ export default function Footer() {
                 href={generalLink()}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-start gap-2 text-sm text-red-100 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-sm text-red-100 hover:text-white transition-colors"
               >
-                <FiPhone size={15} className="mt-0.5 shrink-0" />
+                <FiPhone size={15} className="shrink-0" />
                 +91 99352 57300
               </a>
             </li>
             <li className="flex items-start gap-2 text-sm text-red-100">
               <FiMapPin size={15} className="mt-0.5 shrink-0" />
-              50/A Lalbahadur Shastri Marg, Opp. Girl's High School, Civil Lines, Allahabad
+              50/A Lalbahadur Shastri Marg, Opp. Girl's High School, Civil
+              Lines, Allahabad
             </li>
             <li>
               <a
@@ -82,18 +97,25 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-red-700 text-center py-4 text-xs text-red-200">
-        © {new Date().getFullYear()} Prerna Creations. All rights reserved. Created by{' '}
-        <a
-          href="https://BeBeyond.digital"
-          target="_blank"
-          rel="noreferrer"
-          className="text-red-200 hover:text-white transition-colors"
-        >
-          BeBeyond
-        </a>
+      {/* Bottom Bar */}
+      <div className="border-t border-red-700 py-4 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-red-200">
+          <p>
+            © {new Date().getFullYear()} Prerna Creations. All rights reserved.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-1">
+            <p>Created by</p>
+            <a
+              href="https://bebeyond.digital"
+              target="_blank"
+              rel="noreferrer"
+              className="text-red-300 hover:text-white transition-colors"
+            >
+              Bebeyond
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -4,24 +4,11 @@ import SectionHeader from "../components/SectionHeader";
 import { generalLink, orderLink } from "../utils/whatsapp";
 
 const quickMessages = [
-  {
-    label: "🛏️ Check availability",
-    message: "Hi! I want to check availability of bedsheets.",
-  },
-  {
-    label: "💰 Ask about price",
-    message: "Hi! Can you share the price list for bedsheets?",
-  },
-  {
-    label: "🚚 Delivery enquiry",
-    message: "Hi! Do you deliver to my area? I want to know delivery details.",
-  },
-  {
-    label: "📦 Bulk order",
-    message:
-      "Hi! I want to place a bulk order for bedsheets. Please share details.",
-  },
-];
+  { label: '📦 Bulk order enquiry', message: 'Hi! I want to place a bulk order for bedsheets. Please share MOQ and wholesale pricing.' },
+  { label: '💰 Wholesale price list', message: 'Hi! Can you share the wholesale price list for your bedsheets?' },
+  { label: '🚚 Pan India shipping rates', message: 'Hi! I want to know shipping rates and delivery time for bulk orders across India.' },
+  { label: '🤝 Become a reseller', message: 'Hi! I am interested in becoming a reseller for Prerna Creations. Please share details.' },
+]
 
 const contactDetails = [
   {

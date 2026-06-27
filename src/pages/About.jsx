@@ -4,12 +4,14 @@ import SectionHeader from '../components/SectionHeader'
 import { generalLink } from '../utils/whatsapp'
 
 const whyUs = [
-  'Premium quality cotton fabric',
-  'Fitted sheets with perfect elastic fit',
-  '500+ designs — updated regularly',
+  'Heavy cotton fabric — durable and premium quality',
+  'Fitted sheets with strong elastic — perfect fit guaranteed',
+  '500+ designs updated regularly',
   'All sizes: Single, Double, Queen, King',
-  'Affordable prices, no compromise on quality',
-  'Trusted by hundreds of families in Allahabad',
+  'Bulk & wholesale orders welcome',
+  'Pan India shipping — all states covered',
+  'Resellers and wholesalers get special pricing',
+  'Consistent quality across every batch',
 ]
 
 export default function About() {
@@ -19,27 +21,35 @@ export default function About() {
       <section className="bg-gradient-to-br from-brand-red-light via-white to-white py-14 border-b border-red-100">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
 
-          {/* Text */}
           <div className="flex-1">
             <SectionHeader
-              eyebrow="Our Story"
+              eyebrow="Who We Are"
               title="About Prerna Creations"
-              subtitle="A local bedsheet store in Allahabad — built on trust, quality, and care for every home."
+              subtitle="A trusted wholesale bedsheet supplier based in Allahabad — serving resellers and businesses across India."
             />
             <p className="text-gray-500 text-sm leading-relaxed mt-4">
-              Prerna Creations started with a simple goal — bring premium quality bedsheets
-              to every home in Allahabad at honest prices. Located in Civil Lines, we have been
-              serving families across the city with a wide variety of fitted, printed, and plain
-              bedsheets in all sizes.
+              Prerna Creations is a manufacturer and bulk supplier of premium fitted, printed,
+              and plain bedsheets. Based in Civil Lines, Allahabad, we have been supplying
+              quality bedsheets to resellers, wholesalers, and retailers across India.
             </p>
             <p className="text-gray-500 text-sm leading-relaxed mt-3">
-              We believe your bedroom deserves the best. That's why we carefully source soft,
-              durable fabrics and offer hundreds of designs — so there's something for everyone,
-              every season.
+              We use heavy cotton fabric that is soft, durable, and easily washable —
+              making it perfect for retail and resale. Our designs are updated regularly
+              to match market trends, and we ship Pan India with bulk pricing available
+              for all order sizes.
             </p>
+            <div className="flex flex-wrap gap-2 mt-5">
+              {['Pan India Shipping', 'Wholesale Pricing', 'Bulk Orders Welcome', 'Resellers Welcome'].map((badge) => (
+                <span
+                  key={badge}
+                  className="text-xs bg-brand-red-light text-brand-red px-3 py-1.5 rounded-full font-medium"
+                >
+                  {badge}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* Logo Card */}
           <div className="flex-1 flex justify-center">
             <div className="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center gap-4 border border-red-100 w-full max-w-xs">
               <img
@@ -51,7 +61,7 @@ export default function About() {
                 Prerna Creations
               </p>
               <p className="text-gray-400 text-xs text-center">
-                Premium Bedsheets · Civil Lines, Allahabad
+                Wholesale Bedsheet Supplier · Allahabad, UP
               </p>
             </div>
           </div>
@@ -62,11 +72,11 @@ export default function About() {
       <section className="max-w-6xl mx-auto px-4 py-16">
         <SectionHeader
           eyebrow="Why Choose Us"
-          title="What Makes Us Different"
-          subtitle="We don't just sell bedsheets — we help you find the right one."
+          title="Why Resellers Trust Us"
+          subtitle="Consistent quality, bulk pricing and Pan India reach — everything a reseller needs."
           center
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
           {whyUs.map((point) => (
             <div
               key={point}
@@ -81,19 +91,43 @@ export default function About() {
         </div>
       </section>
 
+      {/* Shipping Info */}
+      <section className="bg-brand-red py-14">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <p className="text-red-200 text-sm font-semibold uppercase tracking-widest mb-3">
+            Shipping
+          </p>
+          <h2 className="font-display text-3xl font-bold text-white mb-4">
+            We Ship Across All of India
+          </h2>
+          <p className="text-red-100 text-sm mb-8 max-w-xl mx-auto leading-relaxed">
+            From Allahabad to Delhi, Mumbai, Surat, Jaipur, Kolkata, Bangalore and beyond —
+            we deliver bulk orders to every state in India.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['Delhi', 'Mumbai', 'Surat', 'Jaipur', 'Kolkata', 'Lucknow', 'Bangalore', 'Hyderabad', 'Chennai', 'Pune', '& More'].map((city) => (
+              <span
+                key={city}
+                className="bg-white/20 text-white text-xs font-medium px-4 py-2 rounded-full"
+              >
+                {city}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Visit Us */}
       <section className="bg-brand-red-light py-16">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader
             eyebrow="Find Us"
-            title="Visit Our Store"
-            subtitle="Come see our full collection in person — we're open all week."
+            title="Our Office & Store"
+            subtitle="Visit us in Allahabad or contact us on WhatsApp for bulk enquiries."
             center
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-
-            {/* Map */}
             <div className="rounded-2xl overflow-hidden shadow-sm border border-red-100 h-72">
               <iframe
                 title="Prerna Creations Location"
@@ -107,18 +141,17 @@ export default function About() {
               />
             </div>
 
-            {/* Contact Details */}
             <div className="flex flex-col justify-center gap-5">
               <div className="flex items-start gap-4 bg-white rounded-2xl p-5 border border-red-100 shadow-sm">
                 <div className="bg-brand-red-light p-3 rounded-xl shrink-0">
                   <FiMapPin size={20} className="text-brand-red" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 text-sm mb-1">Address</p>
+                  <p className="font-semibold text-gray-800 text-sm mb-1">Office Address</p>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     50/A Lalbahadur Shastri Marg,<br />
                     Opposite Girl's High School,<br />
-                    Civil Lines, Allahabad
+                    Civil Lines, Allahabad, UP
                   </p>
                 </div>
               </div>
@@ -128,7 +161,7 @@ export default function About() {
                   <FiPhone size={20} className="text-brand-red" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 text-sm mb-1">Phone / WhatsApp</p>
+                  <p className="font-semibold text-gray-800 text-sm mb-1">Call / WhatsApp</p>
                   <a
                     href={generalLink()}
                     target="_blank"
@@ -165,10 +198,10 @@ export default function About() {
       <section className="bg-brand-red py-14 text-center">
         <div className="max-w-xl mx-auto px-4">
           <h2 className="font-display text-3xl font-bold text-white mb-3">
-            Have a Question?
+            Interested in Bulk Orders?
           </h2>
           <p className="text-red-100 text-sm mb-8">
-            Message us on WhatsApp — we reply fast.
+            WhatsApp us for wholesale pricing, MOQ details and shipping rates across India.
           </p>
           <a
             href={generalLink()}
@@ -177,7 +210,7 @@ export default function About() {
             className="inline-flex items-center gap-2 bg-white text-brand-red font-bold px-8 py-3.5 rounded-full hover:bg-red-50 transition-colors"
           >
             <FaWhatsapp size={22} />
-            Chat on WhatsApp
+            Enquire on WhatsApp
           </a>
         </div>
       </section>
